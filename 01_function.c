@@ -35,7 +35,6 @@ void superMan(int, int);
 
 int main(void)  // start program
 {
-	
     printf("Start program here.\n");    // first line, new line symbol
     superMan(5, 1);                     // control jumps to superMan below
 
@@ -50,7 +49,7 @@ int main(void)  // start program
     function declares 3 variables = super, man, superman
     function requires 2 arguments (super, man); must be integers
 */
-void superMan(int super, int man)   //
+void superMan(int super, int man)
 {
     int superman = super + man;
     printf("%d", superman);
