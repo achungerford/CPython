@@ -13,7 +13,6 @@
 
 int main(void)  // start program
 {
-    
     printf("Start program here.\n");
 
     // system("pause");
