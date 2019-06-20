@@ -1,22 +1,20 @@
 /*
     Demonstrating Python's PEP 7 formatting for C programs.
-*/
 
-    // C format choices
-        // define functions before you call them OR
-        // declare the functions, then call them, define below the call
+    C format choices
+    define functions before you call them OR
+    declare the functions, then call them, define below the call
 
-/*
-     for anything before Python 3.6
-     all declarations must be at the top of a block
-     (not necessarily at the top of function)
+    for anything before Python 3.6
+    all declarations must be at the top of a block
+    (not necessarily at the top of function)
 */
 
 
 
 /*
 ===============================================================================
-Example 3: Function scope
+Example 4 Scope: Function, no arguments, return type int
 ===============================================================================
 */
 
@@ -30,8 +28,9 @@ Example 3: Function scope
     function type is void bc no return statement;
 */
 
-// function declaration
+// function declarations
 void superMan(void);
+int batMan(void);
 
 int main(void)  // start program
 {
@@ -39,6 +38,8 @@ int main(void)  // start program
     printf("Start program here.\n");    // first line, new line symbol
     superMan();                        // control jumps to superMan below
     printf("%d\n", superman);
+
+    printf("batMan function returns batman = %d\n", batMan());
     printf("\nEnd program here.\n");
 
     // system("pause");
@@ -56,4 +57,19 @@ void superMan(void)
 {
     int super = 10, man = 5, superman = super + man;
     printf("%d\n", superman);
+}
+
+
+/*
+    RETURN FUNCTIONS
+    function name = batMan
+    function type = int
+    function declares 3 variables, bat, man, batman
+    function has no arguments (void);
+*/
+int batMan(void)
+{
+    int bat = 10, man = 10, batman;
+    batman = bat * man;
+    return batman;
 }
