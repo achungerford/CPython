@@ -14,7 +14,7 @@
 
 /*
 ===============================================================================
-Example 4 Scope: return function, no arguments
+Example 4 Scope: return function with arguments
 ===============================================================================
 */
 
@@ -85,7 +85,6 @@ int batMan(void)
     function declares 2 variables: x, y
     function has 2 arguments (x, y);
 */
-
 int wonderWoman(int x, int y)
 {
     return (x + y) * 10;
