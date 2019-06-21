@@ -61,7 +61,7 @@ void superMan(void)
 
 
 /*
-    RETURN FUNCTIONS
+    RETURN FUNCTIONS - no argumments
     function name = batMan
     function type = int     // bc we are returning a value
     function declares 3 variables, bat, man, batman

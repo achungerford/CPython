@@ -1,15 +1,13 @@
 /*
     Demonstrating Python's PEP 7 formatting for C programs.
-*/
 
-    // C format choices
-        // define functions before you call them OR
-        // declare the functions, then call them, define below the call
+    C format choices
+    define functions before you call them OR
+    declare the functions, then call them, define below the call
 
-/*
-     for anything before Python 3.6
-     all declarations must be at the top of a block
-     (not necessarily at the top of function)
+    for anything before Python 3.6
+    all declarations must be at the top of a block
+    (not necessarily at the top of function)
 */
 
 
