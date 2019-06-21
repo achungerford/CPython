@@ -31,15 +31,19 @@ Example 4 Scope: return function, no arguments
 // function declarations
 void superMan(void);
 int batMan(void);
+int wonderWoman(int, int);
 
 int main(void)  // start program
 {
-    int superman = 20;
+    int superman = 20, ww;
     printf("Start program here.\n");    // first line, new line symbol
     superMan();                        // control jumps to superMan below
     printf("%d\n", superman);
 
     printf("batMan function returns batman = %d\n", batMan());
+    ww = wonderWoman(5, 3);
+    printf("ww = %d", ww);
+
     printf("\nEnd program here.\n");
 
     // system("pause");
@@ -61,7 +65,7 @@ void superMan(void)
 
 
 /*
-    RETURN FUNCTIONS
+    RETURN FUNCTIONS - no arguments
     function name = batMan
     function type = int     // bc we are returning a value
     function declares 3 variables, bat, man, batman
@@ -72,4 +76,17 @@ int batMan(void)
     int bat = 10, man = 10, batman;
     batman = bat * man;
     return batman;
+}
+
+/*
+    RETURN FUNCTIONS - with arguments
+    function name = wonderWoman
+    function type = int     // bc we are returning an int
+    function declares 2 variables: x, y
+    function has 2 arguments (x, y);
+*/
+
+int wonderWoman(int x, int y)
+{
+    return (x + y) * 10;
 }
