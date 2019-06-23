@@ -5,16 +5,17 @@
         open cmd line
         gcc -o fileNameOutput.exe sourceCodeFileName.c
 
-    gcc run:
+    gcc execute:
         fileNameOutput  (to run)
 */
 
-#include <stdio.h>  // preprocessor/header files
+// header files
+#include <stdio.h> 
 
-int main(void)  // start program
+int main(void)
 {
     printf("Start program here.\n");
 
     // system("pause");
-    return 0;  // end program
+    return 0; 
 }
