@@ -1,20 +1,7 @@
 /*
-    Demonstrating Python's PEP 7 formatting for C programs.
-
-    C format choices
-    define functions before you call them OR
-    declare the functions, then call them, define below the call
-
-    for anything before Python 3.6
-    all declarations must be at the top of a block
-    (not necessarily at the top of function)
-*/
-
-
-
-/*
 ===============================================================================
-Example 3: Function scope
+Example 3:
+    Demonstrate function scope with variables.
 ===============================================================================
 */
 
@@ -22,36 +9,53 @@ Example 3: Function scope
 #include <stdio.h>
 #include <strings.h>
 
-/*
-    function declarations rquire a semicolon;
-    only needs variable types (int, int), not names
-    function type is void bc no return statement;
-*/
-
-// function declaration
+// function declarations
+void calledIt(void);
 void superMan(void);
 
-int main(void)  // start program
+int main(void)
 {
-    int superman = 20;
-    printf("Start program here.\n");    // first line, new line symbol
-    superMan();                        // control jumps to superMan below
+    /* int superman = 20;
+    printf("Start program here.\n");    
+    superMan();
     printf("%d\n", superman);
-    printf("\nEnd program here.\n");
+    printf("\nEnd program here.\n"); */
 
-    // system("pause");
-    return 0;           // end program
+    int man = 10;
+
+    printf("Start program here.\n");
+    printf("Introduce fucntion call.\n");
+    calledIt();
+    printf("function calledIt says man = number above.\n\n");
+
+    printf("What does 'main' say?\n");
+    printf("Main says that man = %d\n", man);
+
+    printf("Finally, what does calledItMan say?");
+    calledItMan();
+
+    
+
+
+
+
+    return 0;
 }
 
 
-/*  FUNCTION DEFINIION BELOW
-    function name = superMan
-    function type = void
-    function declares 3 variables = super, man, superman
-    function has no arguments (void);
+/*
+    Function definitions
 */
-void superMan(void)
+
+
+void calledIt(void)
 {
-    int super = 10, man = 5, superman = super + man;
-    printf("%d\n", superman);
+    int man = 5;
+    printf("Man is %d outside main.\n", man);
+}
+
+void calledItMan(void)
+{
+    int man = 3;
+    printf("calledItMan says man = %d\n", man);
 }
