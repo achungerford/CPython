@@ -18,7 +18,8 @@ int main(void)
     printf("Introduce fucntion call.\n");
     calledIt();
     printf("function calledIt says man = number above.\n");
-	return 0;
+    
+    return 0;
 }
 
 // Function returns nothing (type void). 1 variable. No arguments. (void)
